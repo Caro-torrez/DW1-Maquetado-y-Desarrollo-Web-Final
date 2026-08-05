@@ -1,0 +1,220 @@
+.formulario-portada{
+    justify-content: flex-start;
+}
+
+/* TOUR EN ARGENTINA */
+ul li:hover{
+    background: transparent;
+}
+.tour-info{
+    text-align: center;
+}
+
+.tour-info h3{
+    margin-top: 3rem;
+}
+
+.info-tour{
+    background:linear-gradient(rgba(0, 0, 0, 0.587), rgba(0, 0, 0, 0.634)), url(../imagenes/formulario/tourFondo.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    gap: 1.5rem;
+}
+
+.datos-evento{
+    max-width: 500px;
+    padding: 2rem;
+    color: var(--texto-nav);
+}
+
+.datos-evento p{
+    padding: 0.2rem 0;
+}
+
+.datos-evento ul{
+    display: inline-block;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.datos-evento li{
+    padding: 0.3rem 0;
+}
+
+.imagen-tour{
+    display: none;
+    max-width: 320px;
+    margin: 0;
+}
+
+.mapa-tour{
+    margin: 1rem auto 0;
+}
+
+.mapa-tour iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.beneficios-lista{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 1.5rem;
+}
+
+.beneficios-lista li{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 780px){
+  .imagen-tour{
+    display: block;
+  }
+}
+#titulo-form{
+    text-align: center;
+}
+
+.seccion > p{
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+
+/* FORMULARIO */
+form{
+    width: 100%;
+    padding: 1rem;
+}
+
+fieldset{
+    max-width: 700px;
+    border: 1px solid var(--titulo);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+fieldset div{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+legend{
+    font-family: "Kapakana", cursive;
+    font-size: 1.6rem;
+    color: var(--titulo);
+    padding: 0 0.5rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.campo label{
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea{
+    font-family: "Kite One", sans-serif;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--titulo);
+    border-radius: 6px;
+    background-color: var(--fondo-general2);
+    color: var(--texto-general);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus{
+    outline: 2px solid var(--fondo-hover2);
+    outline-offset: 1px;
+}
+
+.campo textarea{
+    resize: vertical;
+}
+
+.campo input[type="file"]{
+    border: 1px dashed var(--titulo);
+    background-color: transparent;
+    padding: 0.8rem;
+}
+
+/* Checkboxes: beneficios y términos */
+.final{
+    max-width: 700px;
+    margin: auto;
+    padding: 3rem 1rem;
+}
+.opcion-check{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.opcion-check input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--fondo-hover2);
+    flex-shrink: 0;
+}
+
+.opcion-check label{
+    font-family: "Kite One", sans-serif;
+}
+
+button[type="submit"]{
+    display: block;
+    margin: 1rem auto 0;
+}
+
+@media (min-width: 780px){
+    fieldset div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .campo{
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .campo label{
+        width: 90px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+        text-align: right;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea{
+        flex: 1;
+    }
+
+    .campo input[type="file"]{
+        flex: 1;
+    }
+}

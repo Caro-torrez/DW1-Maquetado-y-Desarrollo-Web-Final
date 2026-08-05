@@ -1,0 +1,409 @@
+/*Reseteo CSS*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+img,video{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+body{
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2;
+    overflow-wrap: break-word;
+}
+
+/*PALETA DE COLORES GENERAL*/
+:root{
+    --fondo-general: #E7DBCC;
+    --fondo-general2: #e8e5e0;
+    --texto-general: #0e0e0e;
+    --titulo: #7A5A1E;
+    --contorno-titulo: #D4AF37;
+    --fondo-nav-footer: #1E1E1E;
+    --texto-nav: #e8e5e0;
+    --fondo-hover: #414141;
+    --fondo-hover2: #8f0000;
+}
+
+/*GENERALES*/
+body{
+    background-color: var(--fondo-general);
+    color: var(--texto-general);
+    margin: auto;
+    max-width: 1200px;
+    cursor: url(../imagenes/cursor/cursor.webp) 16 16, auto;
+}
+
+nav, footer{
+    background-color: var(--fondo-nav-footer);
+    color: var(--texto-nav);
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+}
+
+.seccion{
+    padding: 3rem 1.5rem;
+}
+
+h2{
+    font-family: "Kapakana", cursive;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+h3, h4{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+ul li{
+    list-style: none;
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--texto-nav);
+}
+
+p, span{
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.multimedia{
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border: 3px solid var(--fondo-hover2);
+    box-sizing: border-box;
+}
+
+/* DISEÑO MOBILE*/
+
+/* header */
+nav{
+    align-items: center;
+    margin: auto;
+}
+
+main{
+    background-color: var(--fondo-general2);
+}
+
+ul{
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding:0;
+}
+
+ul li{
+    border-radius: 5px;
+}
+
+ul li:hover{
+    background-color: var(--fondo-hover);
+}
+
+ul li ul{
+    padding: 0;
+    margin:0;
+}
+
+ul li ul li{
+    margin: 0;
+    padding: 0;
+}
+
+ul li ul li:hover{
+    background:var(--fondo-hover2);
+}
+
+.activo{
+    border: 2px solid var(--fondo-hover);
+}
+
+h1, .dorado{
+    font-family: "Cinzel", serif;
+    color: var(--titulo);
+    text-shadow:
+        0.3px 0.3px 0 var(--contorno-titulo),
+        -0.3px 0.3px 0 var(--contorno-titulo),
+        0.3px -0.3px 0 var(--contorno-titulo),
+        -0.3px -0.3px 0 var(--contorno-titulo);
+    font-size: 2.5rem;
+}
+
+.logo-portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    max-width: 150px;
+    padding: 1rem;
+}
+
+.logo-portada .logo{
+    margin: 0;
+}
+
+.sub-titulo{
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boton{
+    padding: 0.4rem;
+    border: 1px solid var(--texto-nav);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.boton:hover{
+    background-color: var(--fondo-hover2);
+
+}
+
+.boton-portada{
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 1.4rem;
+}
+
+.boton-oscuro{
+    display: inline-block;
+    background-color: var(--fondo-nav-footer);
+    color: var(--texto-nav);
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 2rem;
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.boton-oscuro:hover{
+    background-color: var(--fondo-hover2);
+}
+
+ul li a:hover ,ul li ul li a:hover, .habilidades h2:hover, .cerrar:hover, .icono-habilidad:hover, .boton:hover, .boton-oscuro:hover, footer figure a:hover{
+    cursor: url("../imagenes/cursor/cursorBeso.webp") 16 16, auto;
+}
+
+.portada-inicio{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../imagenes/inicio/portada.webp);    
+}
+
+.discografia-portada{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.579)),
+    url(../imagenes/discografia/portadaDisco.webp);
+}
+
+.formulario-portada{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../imagenes/formulario/portada.webp); 
+}
+
+.portada{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+    color: var(--texto-nav);
+}
+
+.portada-texto{
+    padding: 1rem;
+}
+
+/* Footer */
+footer figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+footer figure a{
+    padding:  1rem;
+    margin: 0 1rem;
+}
+footer figure a:hover{
+    background-color: var(--fondo-hover);
+    border-radius: 100%;
+}
+
+footer p{
+    padding: 1rem 0;
+    margin: auto;
+}
+
+/* Botones que abren modal */
+.habilidades{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+}
+.habilidades:hover{
+    color: var(--fondo-hover2);
+}
+
+.icono-habilidad{
+    margin: auto;
+    padding: 3rem 1rem;
+}
+.icono-habilidad:hover{
+    filter: sepia(100%) saturate(250%) hue-rotate(-65deg) ;
+}
+
+.modal{
+    display: none;
+}
+
+.modal-contenido{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem 4rem;
+    max-width: 1200px;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+    overflow-y: auto;    
+}
+
+.modal-contenido div{
+    margin: 1rem 0;
+}
+
+.cerrar{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    color:var(--texto-nav);
+    padding: 1rem 2rem;
+}
+
+.cerrar:hover{
+    color: var(--fondo-hover2);
+}
+.modal:checked~ .modal-contenido{
+    display: flex;
+}
+
+.contenedor-info{
+    background-color: var(--fondo-general);
+    color: var(--texto-general);
+    margin: 1rem;
+}
+
+@media (min-width: 580px) {
+    #habilidades-contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 780px) {
+    .portada, .discografia-portada {
+        margin-top: 40px;
+    }
+
+    .modal-contenido{
+        position: fixed;
+        z-index: 10;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 2rem;
+        z-index: 9;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: auto;
+
+    }
+
+    nav ul li{
+        padding: 0 1rem;
+    }
+    
+    nav ul li ul{
+        display:none
+    }
+
+    .inicio:hover ul{
+        display: block;
+        position: absolute;
+        background-color: var(--fondo-nav-footer);
+    }
+
+    .inicio:hover ul li{
+        padding: 0.5rem 1rem;
+    }
+
+    #habilidades-contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 780px) {
+    .icono-habilidad{
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

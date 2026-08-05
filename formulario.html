@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Carpenter</title>
+    <link rel="icon" href="imagenes/favicon.webp" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&amp;display=swap" rel="stylesheet">   
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="inicio"><a href="index.html" >Inicio</a>
+                    <ul>
+                        <li><a href="index.html#bio">¿Quién es?</a></li>
+                        <li><a href="index.html#pop">Estilo Musical</a></li>
+                    </ul>
+                </li>
+                <li class="inicio"><a href="discografia.html">Discografía</a>
+                    <ul>
+                        <li><a href="discografia.html#populares">Hits</a></li>
+                        <li><a href="discografia.html#npr">Tiny Desk Concert para NPR</a></li>
+                        <li><a href="discografia.html#albumes">Álbumes</a></li>
+                    </ul>
+                </li>
+                <li class="inicio activo"><a href="formulario.html">Tour</a>
+                    <ul>
+                        <li><a href="#tour">Tour en Argentina</a></li>
+                        <li><a href="#preventa">Preventa</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="portada formulario-portada">
+            <div class="portada-texto">
+                <div class="logo-portada">
+                    <p class="dorado">20</p>
+                    <img class="logo" src="imagenes/logo/logo.webp" alt="logo SC">
+                    <p class="dorado">26</p>
+                </div>
+                <h1>Sabrina Carpenter</h1>
+                <p class="sub-titulo">“Man's Best Friend Tour”</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="tour" class="seccion tour-info">
+            <h2>Tour en Argentina</h2>
+            <div class="info-tour">
+                <div class="datos-evento">
+                    <h3>Buenos Aires, Argentina</h3>
+                    <p><strong>Lugar:</strong> Estadio Más Monumental (River Plate)</p>
+                    <p><strong>Dirección:</strong> Av. Pres. Figueroa Alcorta 7597, C1428 CABA</p>
+                    <p><strong>Fechas:</strong></p>
+                    <ul>
+                        <li>Viernes 31 de Julio</li>
+                        <li>Sábado 1 de Agosto</li>
+                        <li>Sábado 8 de Agosto</li>
+                    </ul>
+                </div>
+                <img src="imagenes/formulario/tour.webp" alt="Portada Man's Best Friend Tour" class="imagen-tour">
+            </div>
+            <h3>Ubicación del estadio</h3>
+            <div class="mapa-tour multimedia">
+                <iframe
+                    src="https://www.google.com/maps?q=Estadio+M%C3%A1s+Monumental,+Buenos+Aires&amp;output=embed"
+                    title="Mapa del Estadio Más Monumental, sede del Man's Best Friend Tour"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+            </div>
+            <h3>Beneficios</h3>
+            <ul class="beneficios-lista">
+                <li>
+                    <strong>Photocall temático del tour:</strong> un espacio ambientado con la estética del álbum "Man's Best Friend" para sacarte fotos antes o después del show.
+                </li>
+                <li>
+                    <strong>Meet &amp; Greet:</strong> la posibilidad de conocer a Sabrina en persona antes del show. Los cupos son limitados y sujetos a disponibilidad.
+                </li>
+                <li>
+                    <strong>Merchandising exclusivo de la gira:</strong> productos oficiales (remeras, posters, accesorios) que solo se consiguen en esta gira.
+                </li>
+                <li>
+                    <strong>Vinilo firmado de "Man's Best Friend":</strong> una copia en vinilo del álbum firmada por la artista.
+                </li>
+            </ul>
+        </section>
+         <section id="preventa" class="seccion" aria-labelledby="titulo-form">
+            <h2 id="titulo-form">Preventa: “Man's Best Friend Tour” en Buenos Aires</h2>
+            <p>Completá este formulario para <strong>reservar tu lugar en la preventa exclusiva</strong> de entradas para el show de Sabrina Carpenter en Buenos Aires. Los cupos son <em>limitados</em> y se asignan por orden de inscripción.</p>
+
+            <form action="gracias.html" method="get">
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <div>
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="campo">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11 2345 6789">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de la reserva</legend>
+                    <div>
+                        <div class="campo">
+                            <label for="funcion">Función a la que querés asistir</label>
+                            <select id="funcion" name="funcion" required>
+                                <option value="">Elegí una fecha</option>
+                                <option value="viernes">Viernes 31 de Julio — Estadio River Plate</option>
+                                <option value="sabado1">Sábado 1 de Agosto — Estadio River Plate</option>
+                                <option value="sabado8">Sábado 8 de Agosto — Estadio River Plate</option>
+
+                            </select>
+                        </div>
+    
+                        <div class="campo">
+                            <label for="cantidad">Cantidad de entradas</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" max="6" value="1" required>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="comprobante">Adjuntar comprobante de la seña (imagen o PDF)</label>
+                        <input type="file" id="comprobante" name="comprobante" accept="image/*,.pdf" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Beneficios que te interesan (podés elegir varios)</legend>
+                    <div>
+                        <div class="opcion-check">
+                            <input type="checkbox" id="photocall" name="beneficios" value="photocall">
+                            <label for="photocall">Photocall temático del tour</label>
+                        </div>
+    
+                        <div class="opcion-check">
+                            <input type="checkbox" id="meetgreet" name="beneficios" value="meet-and-greet">
+                            <label for="meetgreet">Meet &amp; Greet (sujeto a disponibilidad)</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="opcion-check">
+                            <input type="checkbox" id="merch" name="beneficios" value="merchandising">
+                            <label for="merch">Merchandising exclusivo de la gira</label>
+                        </div>
+    
+                        <div class="opcion-check">
+                            <input type="checkbox" id="vinilo" name="beneficios" value="vinilo-firmado">
+                            <label for="vinilo">Vinilo firmado de "Man's Best Friend"</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios</legend>
+                    <div class="campo">
+                        <label for="comentarios">¿Algo más que quieras contarnos?</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="opcion-check final">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones de la preventa</label>
+                </div>
+
+                <button type="submit" class="boton-oscuro">Reservar mi entrada</button>
+
+            </form>
+        </section>
+    </main>
+   <footer>
+        <img class="logo" src="imagenes/logo/logoFooter.webp" alt="Logo de Sabrina Carpenter">
+        <figure>
+            <a href="https://www.instagram.com/sabrinacarpenter/" target="_blank" rel="noopener noreferrer">
+                <img src="imagenes/redes/instagram.webp" alt="Logo de Instagram" class="redes">
+            </a>
+            <a href="https://www.tiktok.com/@sabrinacarpenter" target="_blank" rel="noopener noreferrer">
+                <img src="imagenes/redes/tiktok.webp" alt="Logo de TikTok" class="redes">
+            </a>
+            <a href="https://x.com/sabrinaannlynn" target="_blank" rel="noopener noreferrer">
+                <img src="imagenes/redes/x.webp" alt="Logo de X" class="redes">
+            </a>
+            <a href="https://www.facebook.com/sabrinacarpenter" target="_blank" rel="noopener noreferrer">
+                <img src="imagenes/redes/facebook.webp" alt="Logo de Facebook" class="redes">
+            </a>
+            <a href="https://www.youtube.com/channel/UCPKWE1H6xhxwPlqUlKgHb_w" target="_blank"
+                rel="noopener noreferrer">
+                <img src="imagenes/redes/youtube.webp" alt="Logo de YouTube" class="redes">
+            </a>
+        </figure>
+        <p>&copy; 2026 Pagina Oficial de Sabrina Carpenter</p>
+    </footer>
+</body>
+</html>

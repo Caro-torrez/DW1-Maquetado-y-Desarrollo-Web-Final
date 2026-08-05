@@ -1,0 +1,8 @@
+Alumno: Carol Torrez
+DNI: 46583363
+Materia: DW1 - Maquetado y Desarrollo Web
+Carrera: Tecnicatura Superior en Diseño y Programación Web
+Comisión: DWN1AV
+Año: 2026
+Docente: Mabel García
+Fecha de mesa de final: 07/08 a las 19hs

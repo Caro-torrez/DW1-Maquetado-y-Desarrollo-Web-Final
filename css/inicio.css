@@ -1,0 +1,138 @@
+/* Portada */
+
+
+/* Biografía */
+#bio{
+    background: url(../imagenes/inicio/bioFondo.webp);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bio-img{
+    display: none;
+}
+
+/* Habilidades */
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esconder-img2, .esconder-img1{
+    display: none;
+}
+
+
+.contenedor-texto{
+    padding: 2rem;
+    text-align: justify;
+    font-size: 0.75rem;
+}
+
+.contenedor-texto h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* Historia del pop */
+#pop{
+    padding:0;
+}
+
+#pop-parte1{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/inicio/portada-disco.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 500px;
+    color: var(--texto-nav);
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pop-parte2, #pop-parte3{
+    padding: 1rem;
+}
+
+
+@media (min-width: 580px) {
+    #actriz-contenedor{
+        grid-column: span 2;
+    }
+
+}
+
+@media (min-width: 640px){
+    .esconder-img2{
+        display: block;
+    }
+    
+}
+
+@media (min-width: 680px){
+        #pop-parte1{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        #titulo-pop{
+        background-color: #30303058;
+        color: white;
+        }
+    
+        #pop-parte2, #pop-parte3{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        margin: 0 3rem;
+        }
+    
+        #pop-parte2{
+            background: url(../imagenes/inicio/discos2.webp) no-repeat right center;
+            background-size: contain;
+        }
+    
+        #pop-parte3{
+            background: url(../imagenes/inicio/discos.webp) no-repeat left center;
+            background-size: contain;
+            text-align: right;
+        }
+    
+        #pop-parte3 p {
+            grid-column: 2;
+        }
+
+}
+
+@media (min-width: 780px) {
+    #actriz-contenedor{
+        grid-column: auto;
+    }
+
+    .esconder-img1{
+        display: block;
+    }
+}
+@media (min-width: 890px) {
+#bio{
+    padding: 5rem 3rem;
+    display: flex;
+}
+
+#bio-img{
+    display: block;
+    flex: 1;
+    width: 80%;
+}
+
+#bio-texto{
+    flex: 1;
+    padding: 0 2rem;
+}
+}

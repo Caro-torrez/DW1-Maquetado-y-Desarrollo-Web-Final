@@ -1,0 +1,43 @@
+#gracias{
+    padding: 5rem 1.5rem;
+    box-sizing: content-box;
+}
+
+#gracias p{
+    margin-bottom: 2rem;
+}
+
+#gracias .sub-titulo{
+    margin: 0;
+}
+
+#gracias .logo-portada .dorado{
+    margin: 0;
+}
+
+
+/* Ícono de check dibujado en CSS puro (sin fuentes externas ni imágenes,
+   así evitamos el problema que tuvimos antes con Material Symbols) */
+.check-icono{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid var(--titulo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.check-icono::after{
+    content: "";
+    width: 16px;
+    height: 30px;
+    border-right: 4px solid var(--titulo);
+    border-bottom: 4px solid var(--titulo);
+    transform: rotate(45deg) translate(-2px, -4px);
+}
+
+.portada-texto{
+    padding: 0;
+}

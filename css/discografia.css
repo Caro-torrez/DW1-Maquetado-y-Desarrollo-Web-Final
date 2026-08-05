@@ -1,0 +1,343 @@
+/* Diseño de modal de cada album */
+h2{
+    padding: 1rem;
+}
+
+/* ================================================
+   CANCIONES MÁS POPULARES (videos embebidos)
+   ================================================ */
+.seccion{
+    text-align: center;
+
+}
+
+#populares{
+    text-align: center;
+}
+
+#populares > p{
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.canciones-populares{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.cancion-popular h3{
+    padding-bottom: 0.5rem;
+}
+
+#npr .multimedia{
+    margin: 1rem;
+}
+
+@media (min-width: 780px){
+    .canciones-populares{
+       grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .canciones-populares{
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.info-album{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.boton-album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+.boton-album:hover{
+    border-color: var(--fondo-hover2);
+    color: var(--texto-nav);
+}
+
+.atras{
+    display: flex;
+}
+
+.boton-album img,
+.atras img{
+    height: 1.4em;
+    width: auto;
+}
+.atras:hover{
+    color: var(--fondo-hover2);
+}
+
+.reproducir-album{
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+
+}
+
+.canciones{
+    padding: 1rem;
+}
+
+ol li{
+    border-top: 1px solid var(--texto-general);
+    border-radius: 5px;
+}
+
+ol li div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.info-cancion{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.duracion{
+    color: gray;
+    font-size: .9rem;
+}
+
+.boton-cancion{
+    color: var(--texto-general);
+    border-color: var(--texto-general);
+    margin-left:2rem;
+}
+.boton-cancion:hover{
+    color: var(--texto-nav);
+}
+
+.modal-contenido:has(.detalle-album){
+    padding: 0;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.detalle-album{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondo-nav-footer);
+    overflow-y: auto;
+}
+
+.detalle-album .info-album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--texto-nav);
+    max-height: 100vh;
+}
+
+.detalle-album .info-album .portada-album{
+    max-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-bottom: 1rem;
+
+}
+
+.detalle-album h2{
+    color: var(--texto-nav);
+    text-shadow: none;
+    padding: 0 0 0.5rem;
+    font-size: 2.3rem;
+}
+
+.descripcion-album{
+    color: #d8d8d8;
+    line-height: 1.6;
+    max-width: 480px;
+    padding-bottom: 1rem;
+}
+
+.detalle-album .canciones{
+    background-color: var(--fondo-general);
+    color: var(--texto-general);
+    border: 1px solid var(--texto-general);
+    border-top:1px;
+    border-radius: 5px;
+    padding: 1rem;    
+    margin: 2rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+@media (min-width: 1000px){
+    .detalle-album{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Diseño de una modal que tapa la anterior */
+.modal-contenido div{
+    margin: auto;
+    padding: 0;
+}
+
+.label-volver{
+    align-items: center;
+    background: #0000004c;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: white;
+}
+
+.label-volver:hover{
+    background: var(--fondo-hover2);
+    color: white;
+}
+
+#album1 .contenedor-info h4, #album1 .contenedor-info p, #album5 .contenedor-info h4, #album5 .contenedor-info p{
+    color: var(--texto-general);
+}
+
+#album1::before{
+    background-image: url(../imagenes/discografia/albumes/Portada_de_disco_eyes_wede_open.webp);
+}
+
+
+#album2::before{
+    background-image: url(../imagenes/discografia/albumes/Portada_de_disco_evolution.webp);
+}
+#album3::before{
+    background-image: url(../imagenes/discografia/albumes/Portada_de_disco_singular.webp);
+}
+#album4::before{
+    background-image: url(../imagenes/discografia/albumes/SINGULAR2.webp);
+}
+#album5::before{
+    background-image: url(../imagenes/discografia/albumes/Portada_de_disco_Emails_Cant_sed.webp);
+}
+#album6::before{
+    background-image: url(../imagenes/discografia/albumes/Portada_de_disco_Shortn_sweet.webp);
+}
+#album7::before{
+    background-image: url(../imagenes/discografia/albumes/Portada_de_disco_Mans_Best_Friend.webp);
+}
+
+.modal-reproducir::before{
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.537));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(12px);
+    transform: scale(1.25);
+    z-index: -1;
+    position: fixed;
+    inset: 0;
+}
+
+/* Contenido centrado sobre el fondo */
+.modal-reproducir .contenedor-info{
+    background: transparent;
+    color: var(--texto-nav);
+    text-align: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.modal-reproducir .contenedor-info > img{
+    max-width: 220px;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+}
+
+.modal-reproducir .contenedor-info h3{
+    color: var(--texto-nav);
+    font-size: 2rem;
+    padding: 0.2rem 0 0.3rem;
+}
+
+.modal-reproducir .contenedor-info p{
+    color: #d8d8d8;
+    padding-bottom: 1.5rem;
+}
+
+/* Tarjeta blanca con las plataformas, estilo "linktree" */
+.plataformas{
+    display: block;
+    background-color: var(--fondo-general2);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.plataformas li{
+    border-bottom: 1px solid #d8d3ca;
+}
+
+.plataformas li:last-child{
+    border-bottom: none;
+}
+
+.plataformas li:hover{
+    background-color: #ffffff;
+}
+
+.plataformas li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0.9rem 1.2rem;
+    color: var(--texto-general);
+}
+
+.plataformas li img{
+    max-width: 30%;
+    margin: 0;
+}
+
+
+.boton-plataforma{
+    background-color: var(--fondo-general);
+    color: var(--texto-general);
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.plataformas li a:hover .boton-plataforma{
+    background-color: var(--fondo-hover2);
+    color: var(--texto-nav);
+}
+
+@media (min-width: 800px){
+    .plataformas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plataformas li img{
+        max-width: 50%;
+
+    }
+}

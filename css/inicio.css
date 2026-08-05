@@ -12,6 +12,24 @@
     display: none;
 }
 
+.cita-artista{
+    margin-top: 1.5rem;
+    padding-left: 1.2rem;
+    border-left: 3px solid var(--titulo);
+}
+
+.cita-artista p{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.4rem;
+    color: var(--titulo);
+}
+
+.cita-artista footer{
+    font-family: "Kite One", sans-serif;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
 /* Habilidades */
 .contenedor-info{
     display: flex;

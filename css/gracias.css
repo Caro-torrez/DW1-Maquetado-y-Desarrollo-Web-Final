@@ -1,3 +1,41 @@
+#contenedor-gracias .portada{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+#contenedor-gracias .video-fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+}
+
+#contenedor-gracias .portada::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+
+    z-index: -1;
+}
+
 #gracias{
     padding: 5rem 1.5rem;
     box-sizing: content-box;
@@ -7,6 +45,10 @@
     margin-bottom: 2rem;
 }
 
+#gracias h1, #gracias .dorado{
+    color: var(--texto-nav);
+}
+
 #gracias .sub-titulo{
     margin: 0;
 }
@@ -14,6 +56,8 @@
 #gracias .logo-portada .dorado{
     margin: 0;
 }
+
+
 
 
 /* Ícono de check dibujado en CSS puro (sin fuentes externas ni imágenes,

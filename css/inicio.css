@@ -41,14 +41,15 @@
 }
 
 #pop-parte1{
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/inicio/portada-disco.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.4)), url(../imagenes/inicio/portada-disco.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     max-height: 500px;
     color: var(--texto-nav);
-    padding: 4rem;
+    padding: 1rem;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -78,6 +79,7 @@
             display: grid;
             justify-content: center;
             grid-template-columns: 1fr 1fr;
+            padding: 4rem;
         }
     
         #titulo-pop{

@@ -79,6 +79,7 @@ h3, h4{
 }
 
 ul li{
+    width: 100%;
     list-style: none;
     font-family: "IM Fell DW Pica SC", serif;
     font-size: 1.2rem;
@@ -96,7 +97,6 @@ p, span{
 }
 
 .multimedia{
-    width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
     border: 3px solid var(--fondo-hover2);
@@ -109,6 +109,68 @@ p, span{
 nav{
     align-items: center;
     margin: auto;
+    position: relative;
+    padding: 0.6rem 1.2rem;
+}
+
+/* Menú hamburguesa */
+.nav-toggle{
+    display: none;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32px;
+    height: 28px;
+    cursor: pointer;
+    position: relative;
+    z-index: 11;
+}
+
+.hamburger span{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--texto-nav);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger span:last-child{
+    margin-bottom: 0;
+}
+
+.nav-toggle:checked ~ .hamburger span:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+
+.nav-toggle:checked ~ .hamburger span:nth-child(2){
+    opacity: 0;
+}
+
+.nav-toggle:checked ~ .hamburger span:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+nav > ul{
+    display: none;
+}
+
+.nav-toggle:checked ~ ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 1rem;
+    background-color: var(--fondo-nav-footer);
+    z-index: 10;
+    overflow-y: auto;
 }
 
 main{
@@ -264,8 +326,12 @@ footer figure{
 }
 
 footer figure a{
-    padding:  1rem;
     margin: 0 1rem;
+}
+
+.redes{
+    width: 28px;
+    height: 28px;
 }
 footer figure a:hover{
     background-color: var(--fondo-hover);
@@ -294,6 +360,10 @@ footer p{
 }
 .icono-habilidad:hover{
     filter: sepia(100%) saturate(250%) hue-rotate(-65deg) ;
+}
+
+.titulo-habilidad{
+    font-weight: bold;
 }
 
 .modal{
@@ -353,6 +423,10 @@ footer p{
         margin-top: 40px;
     }
 
+    .hamburger{
+        display: none;
+    }
+
     .modal-contenido{
         position: fixed;
         z-index: 10;
@@ -365,18 +439,28 @@ footer p{
         width: 100%;
         padding: 0.5rem 2rem;
         z-index: 9;
+        display: block;
     }
 
+    .nav-toggle:checked ~ ul,
     nav ul{
         display: flex;
         flex-direction: row;
         gap: 1rem;
         max-width: 1200px;
         margin: auto;
-
+        position: static;
+        inset: auto;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        z-index: auto;
+        overflow: visible;
     }
 
     nav ul li{
+        width: auto;
         padding: 0 1rem;
     }
     

@@ -3,6 +3,11 @@
 }
 
 /* TOUR EN ARGENTINA */
+#tour{
+    padding-right: 0;
+    padding-left: 0;
+}
+
 ul li:hover{
     background: transparent;
 }

@@ -60,25 +60,25 @@
 
 
 
-/* Ícono de check dibujado en CSS puro (sin fuentes externas ni imágenes,
-   así evitamos el problema que tuvimos antes con Material Symbols) */
+
 .check-icono{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    border: 3px solid var(--titulo);
+    border: 3px solid var(--texto-nav);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .check-icono::after{
     content: "";
     width: 16px;
     height: 30px;
-    border-right: 4px solid var(--titulo);
-    border-bottom: 4px solid var(--titulo);
+    border-right: 4px solid var(--texto-nav);
+    border-bottom: 4px solid var(--texto-nav);
     transform: rotate(45deg) translate(-2px, -4px);
 }
 

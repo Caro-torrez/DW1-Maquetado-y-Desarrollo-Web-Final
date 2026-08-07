@@ -59,6 +59,7 @@ ul li:hover{
 
 .mapa-tour{
     margin: 1rem auto 0;
+    padding: 1rem;
 }
 
 .mapa-tour iframe{
@@ -115,6 +116,7 @@ fieldset{
 fieldset div{
     display: grid;
     grid-template-columns: 1fr;
+    min-width: 0;
 }
 
 legend{
@@ -129,6 +131,7 @@ legend{
     flex-direction: column;
     margin-bottom: 1.2rem;
     text-align: left;
+    min-width: 0;
 }
 
 .campo label{
@@ -146,6 +149,9 @@ legend{
     border-radius: 6px;
     background-color: var(--fondo-general2);
     color: var(--texto-general);
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .campo input:focus,

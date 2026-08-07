@@ -58,8 +58,7 @@ ul li:hover{
 }
 
 .mapa-tour{
-    margin: 1rem auto 0;
-    padding: 1rem;
+    margin: 1rem auto 1rem;
 }
 
 .mapa-tour iframe{

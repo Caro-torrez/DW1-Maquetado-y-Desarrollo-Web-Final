@@ -404,7 +404,7 @@ footer p{
 .contenedor-info{
     background-color: var(--fondo-general);
     color: var(--texto-general);
-    margin: 1rem;
+    margin: 0;
 }
 
 @media (min-width: 580px) {
@@ -415,6 +415,9 @@ footer p{
 }
 
 @media (min-width: 780px) {
+    .contenedor-info{
+        margin: 1rem;
+    }
     .portada, .discografia-portada {
         margin-top: 40px;
     }

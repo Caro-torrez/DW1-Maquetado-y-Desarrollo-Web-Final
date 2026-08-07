@@ -166,7 +166,7 @@ ol li div{
     color: #d8d8d8;
     line-height: 1.6;
     max-width: 480px;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .detalle-album .canciones{
